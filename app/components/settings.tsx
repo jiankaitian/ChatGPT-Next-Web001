@@ -434,7 +434,7 @@ export function Settings() {
               </div>
             </Popover>
           </ListItem>
-
+          {/*
           <ListItem
             title={Locale.Settings.Update.Version(currentVersion ?? "unknown")}
             subTitle={
@@ -459,7 +459,7 @@ export function Settings() {
               />
             )}
           </ListItem>
-
+            */}
           <ListItem title={Locale.Settings.SendKey}>
             <Select
               value={config.submitKey}
@@ -634,6 +634,7 @@ export function Settings() {
 
           {!accessStore.hideUserApiKey ? (
             <>
+              {/*
               <ListItem
                 title={Locale.Settings.Endpoint.Title}
                 subTitle={Locale.Settings.Endpoint.SubTitle}
@@ -647,6 +648,7 @@ export function Settings() {
                   }
                 ></input>
               </ListItem>
+                */}
               <ListItem
                 title={Locale.Settings.Token.Title}
                 subTitle={Locale.Settings.Token.SubTitle}
